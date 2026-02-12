@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Miah Md. Ruyel — Geotechnical Engineer | M.Sc. Politecnico di Milano | Portfolio showcasing projects, qualifications, and expertise in geotechnical engineering." />
+  <title>Miah Md. Ruyel — Geotechnical Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Orbitron:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════ PRELOADER ═══════════════════ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-initials">MRM</div>
+      <div class="preloader-bar">
+        <div class="preloader-fill"></div>
+      </div>
+      <p class="preloader-text">Loading Portfolio</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ SCROLL PROGRESS BAR ═══════════════════ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ═══════════════════ CUSTOM CURSOR ═══════════════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">Ruyel</span>
+        <span class="logo-dot">.</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#qualifications" class="nav-link">Qualifications</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#documents" class="nav-link">Documents</a></li>
+        <li><a href="#contact" class="nav-link nav-link-cta">Get In Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Topographic SVG Background -->
+    <div class="hero-bg">
+      <svg class="topo-lines" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice"
+        xmlns="http://www.w3.org/2000/svg">
+        <path class="topo topo-1" d="M-50,450 Q200,350 400,420 T800,380 T1200,440 T1500,400" fill="none"
+          stroke="rgba(193,127,89,0.08)" stroke-width="1.5" />
+        <path class="topo topo-2" d="M-50,500 Q250,400 450,480 T850,430 T1250,500 T1500,460" fill="none"
+          stroke="rgba(193,127,89,0.06)" stroke-width="1.5" />
+        <path class="topo topo-3" d="M-50,550 Q300,450 500,540 T900,480 T1300,560 T1500,520" fill="none"
+          stroke="rgba(193,127,89,0.05)" stroke-width="1.5" />
+        <path class="topo topo-4" d="M-50,350 Q150,250 350,330 T750,280 T1150,360 T1500,320" fill="none"
+          stroke="rgba(129,178,154,0.07)" stroke-width="1" />
+        <path class="topo topo-5" d="M-50,600 Q350,500 550,590 T950,540 T1350,620 T1500,580" fill="none"
+          stroke="rgba(129,178,154,0.05)" stroke-width="1" />
+        <path class="topo topo-6" d="M-50,300 Q100,200 300,280 T700,230 T1100,310 T1500,270" fill="none"
+          stroke="rgba(193,127,89,0.04)" stroke-width="1" />
+        <path class="topo topo-7" d="M-50,650 Q400,550 600,640 T1000,590 T1400,670 T1500,630" fill="none"
+          stroke="rgba(193,127,89,0.04)" stroke-width="1" />
+      </svg>
+      <!-- Floating geological shapes -->
+      <div class="geo-shape geo-shape-1"></div>
+      <div class="geo-shape geo-shape-2"></div>
+      <div class="geo-shape geo-shape-3"></div>
+      <div class="geo-shape geo-shape-4"></div>
+      <div class="geo-shape geo-shape-5"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-greeting reveal-text">Hello/Ciao, I'm</p>
+      <h1 class="hero-name">
+        <span class="name-line"><span class="reveal-text">Miah, Md</span></span>
+        <span class="name-line"><span class="reveal-text accent-text">Ruyel</span></span>
+      </h1>
+      <div class="hero-title-wrapper">
+        <div class="hero-title-line"></div>
+        <p class="hero-title" id="heroTitle"></p>
+        <div class="hero-title-line"></div>
+      </div>
+      <p class="hero-description reveal-text">
+        Shaping stable foundations through science, precision, and 4 years of hands-on expertise in soil mechanics and
+        geotechnical design.
+      </p>
+      <div class="hero-buttons reveal-text">
+        <a href="#projects" class="btn btn-primary magnetic-btn">
+          <span>View My Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <p>Scroll to explore</p>
+        </div>
+        <a href="#contact" class="btn btn-outline magnetic-btn">
+          <span>Let's Talk</span>
+          <i class="fas fa-paper-plane"></i>
+        </a>
+      </div>
+    </div>
+
+
+
+    <!-- Soil Layers Divider -->
+    <div class="soil-layers">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,100 720,0 1080,60 C1260,90 1380,50 1440,70 L1440,120 L0,120 Z" fill="#a67c52"
+          opacity="0.15" />
+        <path d="M0,60 C240,20 480,90 720,50 C960,10 1200,80 1440,40 L1440,120 L0,120 Z" fill="#8B7355" opacity="0.2" />
+        <path d="M0,80 C180,60 360,100 540,70 C720,40 900,90 1080,60 C1260,30 1380,80 1440,60 L1440,120 L0,120 Z"
+          fill="#6B5B45" opacity="0.25" />
+        <path d="M0,95 C360,85 720,105 1080,90 C1260,80 1380,100 1440,90 L1440,120 L0,120 Z" fill="var(--bg-cream)"
+          opacity="1" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ABOUT SECTION ═══════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="accent-text">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper" data-animate="fade-right">
+          <div class="about-image-container">
+            <img src="ruyel.jpeg" alt="Miah Md. Ruyel" class="about-image" />
+            <div class="about-image-frame"></div>
+          </div>
+          <div class="about-image-accent"></div>
+        </div>
+
+        <div class="about-content" data-animate="fade-left">
+          <h3 class="about-headline">A geotechnical engineer who believes every great structure starts beneath the
+            surface.</h3>
+          <p class="about-text">
+            I'm <strong>Miah Md. Ruyel</strong>, currently pursuing my Master's degree in Geotechnical Engineering at
+            <strong>Politecnico di Milano</strong>, one of Europe's leading technical universities. With over
+            <strong>4 years of professional experience</strong> spanning both governmental and private sector projects,
+            I bring a unique blend of academic rigor and practical expertise to every challenge.
+          </p>
+          <p class="about-text">
+            My work revolves around understanding the ground beneath us — from soil investigation and foundation design
+            to slope stability analysis and ground improvement techniques. I'm passionate about applying innovative
+            solutions to complex geotechnical problems and ensuring the safety and longevity of critical infrastructure.
+          </p>
+          <p class="about-text">
+            Whether it's designing foundations for high-rise buildings, analyzing soil behavior under seismic loads,
+            or conducting comprehensive site investigations, I approach every project with precision, dedication,
+            and an unwavering commitment to engineering excellence.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item" data-animate="fade-up" data-delay="100">
+              <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-item" data-animate="fade-up" data-delay="200">
+              <span class="stat-number" data-count="20">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item" data-animate="fade-up" data-delay="300">
+              <span class="stat-number" data-count="2">0</span>
+              <span class="stat-label">Sectors Served</span>
+            </div>
+            <div class="stat-item" data-animate="fade-up" data-delay="400">
+              <span class="stat-number" data-count="1">0</span>
+              <span class="stat-label">M.Sc. in Progress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ QUALIFICATIONS SECTION ═══════════════════ -->
+  <section class="section qualifications" id="qualifications">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">My Credentials</span>
+        <h2 class="section-title">Qualifications & <span class="accent-text">Skills</span></h2>
+      </div>
+
+      <div class="qual-grid">
+        <!-- Education -->
+        <div class="qual-column" data-animate="fade-right">
+          <h3 class="qual-heading"><i class="fas fa-graduation-cap"></i> Education</h3>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024 — Present</span>
+                <h4>M.Sc. in Geotechnical Engineering</h4>
+                <p>Politecnico di Milano, Italy</p>
+                <span class="timeline-badge">In Progress</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2016 — 2020</span>
+                <h4>B.Sc. in Civil Engineering</h4>
+                <p>University of Dhaka, Bangladesh</p>
+                <span class="timeline-badge completed">Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="qual-heading" style="margin-top:2.5rem;"><i class="fas fa-certificate"></i> Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-award"></i></div>
+              <div class="cert-info">
+                <h4>Professional Engineer License</h4>
+                <p>Board of Engineers, Bangladesh</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-award"></i></div>
+              <div class="cert-info">
+                <h4>Geotechnical Site Investigation</h4>
+                <p>Professional Development Course</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-award"></i></div>
+              <div class="cert-info">
+                <h4>FEM in Geotechnical Engineering</h4>
+                <p>Advanced Computational Methods</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="qual-column" data-animate="fade-left">
+          <h3 class="qual-heading"><i class="fas fa-cogs"></i> Technical Skills</h3>
+
+          <div class="skills-grid">
+            <div class="skill-bar-item" data-animate="fade-up" data-delay="100">
+              <div class="skill-info">
+                <span>Geotechnical Investigation</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item" data-animate="fade-up" data-delay="150">
+              <div class="skill-info">
+                <span>Foundation Design</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item" data-animate="fade-up" data-delay="200">
+              <div class="skill-info">
+                <span>Slope Stability Analysis</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item" data-animate="fade-up" data-delay="250">
+              <div class="skill-info">
+                <span>Soil Mechanics</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="92"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item" data-animate="fade-up" data-delay="300">
+              <div class="skill-info">
+                <span>Seismic & Dynamic Analysis</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item" data-animate="fade-up" data-delay="350">
+              <div class="skill-info">
+                <span>Ground Improvement</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="qual-heading" style="margin-top:2.5rem;"><i class="fas fa-laptop-code"></i> Software Proficiency
+          </h3>
+          <div class="software-grid">
+            <div class="software-item" data-animate="zoom-in" data-delay="100">
+              <div class="software-icon"><i class="fas fa-cube"></i></div>
+              <span>PLAXIS 2D/3D</span>
+            </div>
+            <div class="software-item" data-animate="zoom-in" data-delay="150">
+              <div class="software-icon"><i class="fas fa-mountain"></i></div>
+              <span>GeoStudio</span>
+            </div>
+            <div class="software-item" data-animate="zoom-in" data-delay="200">
+              <div class="software-icon"><i class="fas fa-drafting-compass"></i></div>
+              <span>AutoCAD</span>
+            </div>
+            <div class="software-item" data-animate="zoom-in" data-delay="250">
+              <div class="software-icon"><i class="fas fa-square-root-variable"></i></div>
+              <span>MATLAB</span>
+            </div>
+            <div class="software-item" data-animate="zoom-in" data-delay="300">
+              <div class="software-icon"><i class="fas fa-cubes"></i></div>
+              <span>ABAQUS</span>
+            </div>
+            <div class="software-item" data-animate="zoom-in" data-delay="350">
+              <div class="software-icon"><i class="fas fa-building"></i></div>
+              <span>ETABS/SAP</span>
+            </div>
+            <div class="software-item" data-animate="zoom-in" data-delay="400">
+              <div class="software-icon"><i class="fas fa-map"></i></div>
+              <span>ArcGIS</span>
+            </div>
+            <div class="software-item" data-animate="zoom-in" data-delay="450">
+              <div class="software-icon"><i class="fas fa-file-excel"></i></div>
+              <span>MS Excel VBA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ EXPERIENCE SECTION ═══════════════════ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Where I've Worked</span>
+        <h2 class="section-title">Professional <span class="accent-text">Experience</span></h2>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="exp-line"></div>
+
+        <div class="exp-item exp-left" data-animate="fade-right">
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <span class="exp-type govt">Government</span>
+              <span class="exp-duration">2022 — 2024</span>
+            </div>
+            <h3>Senior Geotechnical Engineer</h3>
+            <h4>Department of Public Works & Highways</h4>
+            <ul class="exp-details">
+              <li>Led geotechnical investigations for national highway and bridge projects</li>
+              <li>Supervised drilling operations and in-situ testing programs (SPT, CPT, Vane Shear)</li>
+              <li>Designed deep and shallow foundations for critical infrastructure</li>
+              <li>Prepared comprehensive geotechnical reports for government review boards</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item exp-right" data-animate="fade-left">
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <span class="exp-type private">Private Sector</span>
+              <span class="exp-duration">2021 — 2022</span>
+            </div>
+            <h3>Geotechnical Design Engineer</h3>
+            <h4>ABC Geotechnical Consultants Ltd.</h4>
+            <ul class="exp-details">
+              <li>Performed slope stability analyses for mountainous terrain development</li>
+              <li>Designed retaining walls and earth structures for urban projects</li>
+              <li>Conducted finite element analysis using PLAXIS for complex soil-structure interaction</li>
+              <li>Collaborated with structural and environmental engineering teams</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item exp-left" data-animate="fade-right">
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <span class="exp-type govt">Government</span>
+              <span class="exp-duration">2020 — 2021</span>
+            </div>
+            <h3>Junior Geotechnical Engineer</h3>
+            <h4>National Housing Authority</h4>
+            <ul class="exp-details">
+              <li>Assisted in site investigation programs for public housing developments</li>
+              <li>Processed and interpreted laboratory test data (triaxial, consolidation, permeability)</li>
+              <li>Contributed to foundation design recommendations for multi-story residential buildings</li>
+              <li>Prepared soil investigation reports and borehole logs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PROJECTS SECTION ═══════════════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">My Portfolio</span>
+        <h2 class="section-title">Featured <span class="accent-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of geotechnical engineering projects I've contributed to across
+          different sectors.</p>
+      </div>
+
+      <div class="projects-filter" data-animate="fade-up">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="govt">Government</button>
+        <button class="filter-btn" data-filter="private">Private</button>
+        <button class="filter-btn" data-filter="research">Research</button>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" data-category="govt" data-animate="fade-up" data-delay="100">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-bridge"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="View Details"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Government</span>
+            <h3>Highway Bridge Foundation Design</h3>
+            <p>Comprehensive geotechnical investigation and pile foundation design for a 240m highway bridge crossing a
+              major river system.</p>
+            <div class="project-tags">
+              <span>Pile Foundation</span>
+              <span>SPT/CPT</span>
+              <span>PLAXIS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="private" data-animate="fade-up" data-delay="200">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-mountain"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="View Details"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Private Sector</span>
+            <h3>Slope Stability Analysis — Hill Terrain</h3>
+            <p>Stability assessment and remediation design for a residential development on a 30° hillside prone to
+              landslide activity.</p>
+            <div class="project-tags">
+              <span>Slope Stability</span>
+              <span>GeoStudio</span>
+              <span>Remediation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="govt" data-animate="fade-up" data-delay="300">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="View Details"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Government</span>
+            <h3>Public Housing Soil Investigation</h3>
+            <p>Multi-phase site investigation program including 50+ boreholes, lab testing, and geotechnical design for
+              a 12-building housing complex.</p>
+            <div class="project-tags">
+              <span>Site Investigation</span>
+              <span>Lab Testing</span>
+              <span>Foundation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="private" data-animate="fade-up" data-delay="100">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-warehouse"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="View Details"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Private Sector</span>
+            <h3>Retaining Wall Design — Urban Site</h3>
+            <p>Design of a 12m cantilever retaining wall system for a basement excavation in dense urban environment
+              with adjacent structures.</p>
+            <div class="project-tags">
+              <span>Retaining Wall</span>
+              <span>Excavation</span>
+              <span>FEM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="research" data-animate="fade-up" data-delay="200">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-flask"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="View Details"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Research</span>
+            <h3>Seismic Liquefaction Assessment</h3>
+            <p>Research study on liquefaction potential of alluvial deposits using SPT-based and CPT-based methods with
+              probabilistic analysis.</p>
+            <div class="project-tags">
+              <span>Liquefaction</span>
+              <span>Seismic</span>
+              <span>MATLAB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="research" data-animate="fade-up" data-delay="300">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-water"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" title="View Details"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Research</span>
+            <h3>Ground Improvement — Soft Clay</h3>
+            <p>M.Sc. research on performance evaluation of prefabricated vertical drains in consolidation of soft marine
+              clay deposits.</p>
+            <div class="project-tags">
+              <span>PVD</span>
+              <span>Consolidation</span>
+              <span>PLAXIS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ DOCUMENTS SECTION ═══════════════════ -->
+  <section class="section documents" id="documents">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">My Files</span>
+        <h2 class="section-title">Documents & <span class="accent-text">Reports</span></h2>
+        <p class="section-subtitle">Download my professional documents, technical reports, and certifications.</p>
+      </div>
+
+      <div class="documents-grid">
+        <div class="doc-card" data-animate="fade-up" data-delay="100">
+          <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="doc-info">
+            <h3>Curriculum Vitae</h3>
+            <p>Full CV with detailed professional background, education, and skills.</p>
+            <span class="doc-size">PDF • 2.4 MB</span>
+          </div>
+          <a href="documents/cv-ruyel.pdf" class="doc-download" download title="Download CV">
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+
+        <div class="doc-card" data-animate="fade-up" data-delay="200">
+          <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="doc-info">
+            <h3>Academic Transcripts</h3>
+            <p>Official transcripts from B.Sc. and M.Sc. programs.</p>
+            <span class="doc-size">PDF • 1.8 MB</span>
+          </div>
+          <a href="documents/transcripts.pdf" class="doc-download" download title="Download Transcripts">
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+
+        <div class="doc-card" data-animate="fade-up" data-delay="300">
+          <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="doc-info">
+            <h3>Professional Certifications</h3>
+            <p>Copies of engineering licenses and professional certifications.</p>
+            <span class="doc-size">PDF • 3.1 MB</span>
+          </div>
+          <a href="documents/certifications.pdf" class="doc-download" download title="Download Certifications">
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+
+        <div class="doc-card" data-animate="fade-up" data-delay="400">
+          <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="doc-info">
+            <h3>Technical Report Sample</h3>
+            <p>Sample geotechnical investigation report showcasing my reporting style.</p>
+            <span class="doc-size">PDF • 5.6 MB</span>
+          </div>
+          <a href="documents/technical-report.pdf" class="doc-download" download title="Download Report">
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+
+        <div class="doc-card" data-animate="fade-up" data-delay="500">
+          <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="doc-info">
+            <h3>Research Publication</h3>
+            <p>Published paper on soil liquefaction assessment methodology.</p>
+            <span class="doc-size">PDF • 1.2 MB</span>
+          </div>
+          <a href="documents/research-paper.pdf" class="doc-download" download title="Download Paper">
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+
+        <div class="doc-card" data-animate="fade-up" data-delay="600">
+          <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+          <div class="doc-info">
+            <h3>Letters of Recommendation</h3>
+            <p>Professional references and recommendation letters.</p>
+            <span class="doc-size">PDF • 0.9 MB</span>
+          </div>
+          <a href="documents/recommendations.pdf" class="doc-download" download title="Download Letters">
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Academic Repository -->
+      <div class="academic-repo" style="margin-top: 5rem;">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Knowledge Base</span>
+          <h3 class="section-title" style="font-size: 2rem;">Academic <span class="accent-text">Repository</span></h3>
+          <p class="section-subtitle">A collection of academic notes, design tools, and analysis files.</p>
+        </div>
+
+        <div class="repo-grid">
+          <!-- Folder 1: Academic Notes -->
+          <div class="repo-card" data-animate="fade-up" data-delay="100">
+            <div class="repo-header">
+              <div class="repo-icon"><i class="fas fa-book"></i></div>
+              <h3>Academic Notes</h3>
+              <span class="repo-count">11 Files</span>
+            </div>
+            <ul class="repo-files">
+              <li>
+                <a href="documents/academic/academic-notes/Bearing Capacity Of Soil.xlsx" target="_blank"
+                  data-price-bdt="500" data-price-eur="5">
+                  <i class="fas fa-file-excel"></i> Bearing Capacity Of Soil.xlsx
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/academic-notes/Braja_Das_Principles_of_Geotechnical_Eng.pdf" target="_blank"
+                  data-price-bdt="500" data-price-eur="5">
+                  <i class="fas fa-file-pdf"></i> Braja_Das_Principles_of_Geotechnical_Eng.pdf
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/academic-notes/Emailing Report_Road Boreholes BH-17 to 22.pdf"
+                  target="_blank" data-price-bdt="500" data-price-eur="5">
+                  <i class="fas fa-file-pdf"></i> Emailing Report_Road Boreholes BH-17 to 22.pdf
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/academic-notes/Geotechnical Engineering 2.pdf" target="_blank"
+                  data-price-bdt="500" data-price-eur="5">
+                  <i class="fas fa-file-pdf"></i> Geotechnical Engineering 2.pdf
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/academic-notes/Structural Engineering 3.pdf" target="_blank"
+                  data-price-bdt="500" data-price-eur="5">
+                  <i class="fas fa-file-pdf"></i> Structural Engineering 3.pdf
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/academic-notes/Structural Engineering v.pdf" target="_blank"
+                  data-price-bdt="500" data-price-eur="5">
+                  <i class="fas fa-file-pdf"></i> Structural Engineering v.pdf
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/academic-notes/ethics.pdf" target="_blank" data-price-bdt="500"
+                  data-price-eur="5">
+                  <i class="fas fa-file-pdf"></i> ethics.pdf
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/academic-notes/irrigation.pdf" target="_blank" data-price-bdt="500"
+                  data-price-eur="5">
+                  <i class="fas fa-file-pdf"></i> irrigation.pdf
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/academic-notes/principles_of_geotechnical_engineering_si_8e_solutions_manual.pdf"
+                  target="_blank" data-price-bdt="500" data-price-eur="5">
+                  <i class="fas fa-file-pdf"></i> principles_of_geotechnical_engineering_si_8e_solutions_manual.pdf
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/academic-notes/transportation dovuments.rar" target="_blank"
+                  data-price-bdt="500" data-price-eur="5">
+                  <i class="fas fa-file-archive"></i> transportation dovuments.rar
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Folder 2: Excel Design Tools -->
+          <div class="repo-card" data-animate="fade-up" data-delay="200">
+            <div class="repo-header">
+              <div class="repo-icon"><i class="fas fa-file-excel"></i></div>
+              <h3>Excel Design Tools</h3>
+              <span class="repo-count">3 Files</span>
+            </div>
+            <ul class="repo-files">
+              <li>
+                <a href="documents/academic/excel-design-tools/README.txt" target="_blank" data-price-bdt="500"
+                  data-price-eur="5">
+                  <i class="fas fa-table"></i> Shallow Foundation Design.xlsx
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/excel-design-tools/README.txt" target="_blank" data-price-bdt="500"
+                  data-price-eur="5">
+                  <i class="fas fa-table"></i> Retaining Wall Calc.xlsx
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/excel-design-tools/README.txt" target="_blank" data-price-bdt="500"
+                  data-price-eur="5">
+                  <i class="fas fa-table"></i> Pile Capacity Analysis.xlsm
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Folder 3: Software Analysis -->
+          <div class="repo-card" data-animate="fade-up" data-delay="300">
+            <div class="repo-header">
+              <div class="repo-icon"><i class="fas fa-laptop-code"></i></div>
+              <h3>Software Analysis</h3>
+              <span class="repo-count">2 Files</span>
+            </div>
+            <ul class="repo-files">
+              <li>
+                <a href="documents/academic/software-analysis/README.txt" target="_blank" data-price-bdt="500"
+                  data-price-eur="5">
+                  <i class="fas fa-project-diagram"></i> PLAXIS Model - Dam.p2dx
+                </a>
+              </li>
+              <li>
+                <a href="documents/academic/software-analysis/README.txt" target="_blank" data-price-bdt="500"
+                  data-price-eur="5">
+                  <i class="fas fa-project-diagram"></i> GeoStudio Slope Analysis.gsz
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT SECTION ═══════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Reach Out</span>
+        <h2 class="section-title">Get In <span class="accent-text">Touch</span></h2>
+        <p class="section-subtitle">Have a project, opportunity, or question? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-animate="fade-right">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <h4>Email</h4>
+            <a href="mailto:mdruyel.miah@mail.polimi.it"
+              style="display:block; margin-bottom:0.3rem;">mdruyel.miah@mail.polimi.it</a>
+            <a href="mailto:md.ruyel.miah1996@gmail.com">md.ruyel.miah1996@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h4>Location</h4>
+            <p>Milan, Italy</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-university"></i></div>
+            <h4>University</h4>
+            <p>Politecnico di Milano</p>
+          </div>
+
+          <div class="contact-socials">
+            <h4>Follow Me</h4>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/md-ruyel-miah-2325dob23/" class="social-link"
+                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+              <a href="#" class="social-link" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+              <a href="https://github.com/ruyel232523" class="social-link" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-animate="fade-left">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required autocomplete="name" />
+            <label for="name">Your Name</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required autocomplete="email" />
+            <label for="email">Your Email</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required />
+            <label for="subject">Subject</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+            <span class="form-line"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit magnetic-btn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+            <span class="btn-success"><i class="fas fa-check"></i> Sent!</span>
+            <i class="fas fa-paper-plane btn-icon"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,50 C360,100 720,0 1080,50 C1260,75 1380,25 1440,50 L1440,100 L0,100 Z" fill="#1a1a2e" />
+      </svg>
+    </div>
+    <div class="footer-content">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#hero" class="footer-logo">Ruyel<span class="logo-dot">.</span></a>
+            <p>Geotechnical Engineer building safe, sustainable foundations for the future.</p>
+          </div>
+          <div class="footer-nav">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#qualifications">Qualifications</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#documents">Documents</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Get In Touch</h4>
+            <p><i class="fas fa-envelope"></i> mdruyel.miah@mail.polimi.it</p>
+            <p><i class="fas fa-envelope"></i> md.ruyel.miah1996@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Milan, Italy</p>
+            <div class="footer-socials">
+              <a href="https://www.linkedin.com/in/md-ruyel-miah-2325dob23/" aria-label="LinkedIn"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+              <a href="https://github.com/ruyel232523" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 1996 MIAH, MD RUYEL crafted with precision</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Payment Modal -->
+  <div id="payment-modal" class="payment-modal">
+    <div class="payment-content">
+      <span class="close-modal">&times;</span>
+      <div class="payment-header">
+        <h2>Premium Resource</h2>
+        <p>Complete payment to download</p>
+      </div>
+
+      <div class="file-details">
+        <div class="file-icon"><i class="fas fa-file-alt"></i></div>
+        <div class="file-info">
+          <h3 id="modal-filename">File Name.pdf</h3>
+          <p id="modal-price">500 BDT / 5 EUR</p>
+        </div>
+      </div>
+
+      <div class="payment-tabs">
+
+        <button class="tab-btn active" data-tab="paypal">International (PayPal)</button>
+        <button class="tab-btn" data-tab="card">Card Transfer</button>
+      </div>
+
+      <div class="payment-body">
+
+
+        <!-- PayPal -->
+        <div id="paypal" class="tab-content active">
+          <p>Pay securely via PayPal:</p>
+          <div class="payment-number-box" style="border: none; background: transparent;">
+            <a href="https://www.paypal.com/ncp/payment/FN5TFBUDHW546" target="_blank"
+              class="btn btn-primary full-width"
+              style="margin-top:0; display:flex; justify-content:center; align-items:center; gap:0.5rem;">
+              <i class="fab fa-paypal"></i> Pay Now via PayPal
+            </a>
+          </div>
+          <p class="small-text">Link opens in a new tab. After payment, click "I have sent the payment" below.</p>
+        </div>
+
+        <!-- Card -->
+        <div id="card" class="tab-content">
+          <p>Card Transfer (Banca Popolare di Sondrio):</p>
+          <div class="payment-number-box card-box">
+            <div class="card-details">
+              <span class="label">Number:</span>
+              <span class="value">5406 0801 2204 4390</span>
+            </div>
+            <div class="card-details">
+              <span class="label">Name:</span>
+              <span class="value">MIAH MD RUYEL</span>
+            </div>
+            <button class="copy-btn" onclick="copyText('5406 0801 2204 4390')"><i class="fas fa-copy"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="transaction-input-box" style="margin-top: 1.5rem;">
+        <label for="transaction-id"
+          style="font-size: 0.9rem; color: var(--color-text-muted); display: block; margin-bottom: 0.5rem;">Enter
+          Transaction ID / Reference:</label>
+        <input type="text" id="transaction-id" placeholder="e.g., 9X23D..."
+          style="width: 100%; padding: 0.8rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); background: var(--color-light); color: var(--color-text);">
+      </div>
+
+      <button id="confirm-payment-btn" class="btn btn-primary full-width">
+        <i class="fas fa-check-circle"></i> Verify & Download
+      </button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ BACK TO TOP ═══════════════════ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
